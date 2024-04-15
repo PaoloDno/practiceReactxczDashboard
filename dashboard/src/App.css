@@ -32,8 +32,8 @@ body {
   --mainclrlgt: #e7af60;
   --secondaryclr: #2c5ada;
   --secondaryclrlgt: lightblue;
-  --tertiaryclr: rgb(158, 231, 109);
-  --tertiaryclrlgt: rgb(148, 209, 148);
+  --tertiaryclr: rgb(145, 233, 86);
+  --tertiaryclrlgt: rgb(6, 88, 6);
   --textclr: #eee8e8;
   --textcnt: #f762ea;
   --fontsize1: 5rem;
@@ -41,7 +41,10 @@ body {
   --fontsize3: 2.5rem;
   --fontsize4: 2.1rem;
   --fontsize5: 1.75rem;
-  --fontsize6: 1rem;
+  --fontsize6: 1.5rem;
+  --fontsize7: 1.25rem;
+  --fontsize8: 0.9rem;
+  --fontsize9: 0.75rem;
 }
 
 a {

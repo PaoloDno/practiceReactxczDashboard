@@ -7,6 +7,7 @@ import { PiTrophy, PiTrendUp } from "react-icons/pi";
 import { FaChartPie } from "react-icons/fa";
 import { LuPhone } from "react-icons/lu";
 import { CiCreditCard2 } from "react-icons/ci";
+import { FaRegCircleQuestion } from "react-icons/fa6";
 
 const Sidebar = () => {
   return (
@@ -78,6 +79,14 @@ const Sidebar = () => {
             </a>
           </li>
         </ul>
+        </div>
+        <div className="sideBarCard">
+        < FaRegCircleQuestion className="icons"/>
+        <div className="sideBarCardContent">
+
+        <p>Having rouble using the App contact us at our Help Center</p>
+        <button className="btn">Get Help</button>
+        </div>
         </div>
     </div>
   )

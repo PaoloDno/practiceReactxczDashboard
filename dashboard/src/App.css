@@ -1,0 +1,99 @@
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100..900;1,100..900&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Jersey+20&display=swap');
+
+
+body {
+  background: hsla(188, 82%, 17%, 0.247);
+
+}
+
+.montserrat-texto {
+  font-family: "Montserrat", sans-serif;
+  font-weight: 400;
+  font-style: normal;
+}
+.jersey-20-texto {
+  font-family: "Jersey 20", sans-serif;
+  font-weight: 400;
+  font-style: normal;
+}
+
+* {
+  padding: 0;
+  box-sizing: border-box;
+  margin: 0;
+  font-family: "Montserrat", sans-serif;
+}
+
+
+:root {
+  --bgcolor: rgba(230, 230, 230, 0.911);
+  --mainclr: #d66b07;
+  --mainclrlgt: #e7af60;
+  --secondaryclr: #2c5ada;
+  --secondaryclrlgt: lightblue;
+  --tertiaryclr: rgb(158, 231, 109);
+  --tertiaryclrlgt: rgb(148, 209, 148);
+  --textclr: #eee8e8;
+  --textcnt: #f762ea;
+  --fontsize1: 5rem;
+  --fontsize2: 4rem;
+  --fontsize3: 2.5rem;
+  --fontsize4: 2.1rem;
+  --fontsize5: 1.75rem;
+  --fontsize6: 1rem;
+}
+
+a {
+  text-decoration: none;
+}
+
+li {
+  list-style: none;
+}
+
+.flex {
+  display: flex;
+  align-items: center;
+}
+
+.grid {
+  display: grid;
+  align-items: center;
+}
+
+.btn {
+  border: none;
+  outline: none;
+  cursor: pointer;
+  box-shadow: 0 2px 4px var(--tertiaryclr);
+  background-color: var(--tertiaryclr);
+  padding: .8rem 1rem;
+  color: var(--textcnt)
+}
+
+.btn:hover {
+  background-color: var(--textcnt);
+  color: var(--textclr);
+}
+
+body {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  margin: auto;
+  padding: 1rem;
+}
+
+.container{
+  position: relative;
+  width: 95vw;
+  height: 95vh;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  background: var(--bgcolor);
+  overflow: hidden;
+  border-radius: 1rem;
+  box-shadow: 4px 5px 8px #ee28dda2;
+}

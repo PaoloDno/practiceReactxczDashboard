@@ -1,0 +1,84 @@
+:root {
+  --bgcolor: rgba(230, 230, 230, 0.911);
+  --mainclr: #d66b07;
+  --mainclrlgt: #e7af60;
+  --secondaryclr: #2c5ada;
+  --secondaryclrlgt: lightblue;
+  --tertiaryclr: rgb(158, 231, 109);
+  --tertiaryclrlgt: rgb(148, 209, 148);
+  --textclr: #eee8e8;
+  --textcnt: #f762ea;
+  --fontsize1: 5rem;
+  --fontsize2: 4rem;
+  --fontsize3: 2.5rem;
+  --fontsize4: 2.1rem;
+  --fontsize5: 1.75rem;
+  --fontsize6: 1.5rem;
+  --fontsize7: 1.45rem;
+  --fontsize8: 1.3rem;
+  --fontsize9: 1rem;
+}
+.grid{
+  display: grid;
+
+}
+.flex{
+  display: flex;
+}
+
+.sideBar {
+  margin: 0 1.5rem;
+  gap: 0.25rem;
+  background: #f8c67f49;
+  padding: 0.75rem;
+  border-radius: 1.5rem;
+  height: 96%;
+  justify-content: center;
+  align-items: center;
+  min-width: 200px;
+
+  .logoDiv {
+    padding: 0.5rem 1.5rem 0rem 1.5rem;
+    cursor: pointer;
+    font-size: var(--fontsize5);
+  }
+  
+
+.menuDiv, .settingDiv{
+  display: grid;
+  align-items: center;
+  gap: 0.75rem;
+
+  .divTitle{
+    padding: 0;
+    margin: 0.26rem;
+    font-size: var(--fontsize6);
+  }
+  .menuLists {
+    display: grid;
+    gap: 0.35rem;
+
+  }
+
+  .settingList{
+    gap: 0.2rem;
+  }
+
+  .settingLists, .menuLists {
+    .list-item{
+      background-color: #d66b07;
+      margin: 0.2rem;
+      .menulink {
+        text-decoration: none;
+        background-color: aqua;
+        .icons {
+          padding: 0.15rem;
+          margin-right: 1rem;
+          background-color: #77e760;
+        }
+      }
+    }
+  }
+}
+
+}

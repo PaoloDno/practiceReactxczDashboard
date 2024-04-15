@@ -1,6 +1,6 @@
 import { useState } from 'react';
 import Sidebar from './components/dashsidebarsection/sidebar';
-import DashBody from './components/dashbodysection/dashBody';
+import DashBody from './components/dashBody';
 function App() {
  
   return (

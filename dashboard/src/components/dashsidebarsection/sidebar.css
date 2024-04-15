@@ -145,7 +145,8 @@
     box-shadow: 0 2px 4px var(--tertiaryclr);
     background-color: var(--tertiaryclr);
     padding: .3rem 0.6rem;
-    color: var(--bgcolor)
+    color: var(--bgcolor);
+    margin: 0.2rem;
   }
   
   .btn:hover {

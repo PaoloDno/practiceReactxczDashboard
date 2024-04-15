@@ -1,10 +1,10 @@
 import React from "react";
 import './activity.css';
 
-const activityBody = () => {
+function activityBody() {
   return (
-    <div>
-      Activity
+    <div className="ActivitySection">
+      <p>asdas</p>
     </div>
   )
 };

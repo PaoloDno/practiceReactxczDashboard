@@ -1,9 +1,9 @@
 import React from "react"
 
-const listBody = () => {
+function listBody() {
   return (
-    <div>
-      Listing
+    <div className="Listings">
+      
     </div>
   )
 };

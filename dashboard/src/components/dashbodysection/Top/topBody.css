@@ -1,0 +1,207 @@
+.Profile-icon{
+  width: 2.8rem;
+  height: 2.8rem;
+  border-radius: 50%;
+  border: 1px solid black;
+  object-fit: cover;
+}
+
+.top-section{
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+  overflow: hidden;
+  position: relative;
+  background: 
+  linear-gradient( 116deg,
+  #2d77e683 10%,
+  rgba(144, 253, 43, 0.61),
+  rgba(231, 135, 9, 0.618),
+  rgba(248, 44, 44, 0.444)
+  );
+  padding: 0.4rem;
+  border-radius: 1rem;
+  height: 56%;
+
+  .headerSection{
+    width: 100%;
+    display: flex;
+    flex-direction: row;
+    overflow: hidden;
+    background-color: rgba(231, 79, 104, 0.123);
+    backdrop-filter: blur(10px);
+    height: fit-content;
+    justify-content: space-between;
+    align-items: flex-start;
+    padding: 0.2rem;
+    .title{
+      h1{
+        font-size: var(--fontsize7);
+      }
+      p{
+        font-size: var(--fontsize9);
+      }
+    }
+
+    .searchBar{
+      padding: 0 0.15rem;
+      input{
+        margin: 0.5rem;
+        padding: 0.2rem;
+        color: rgb(27, 13, 13);
+        background: transparent;
+        border: 2px solid #252525;
+        border-radius: 0.4rem;
+      }
+      font-size: var(--fontsize6);
+      .icons{
+        font-size: var(--fontsize7);
+      }
+    }
+    .adminDiv {
+      align-items: flex-start;
+      .iconLink{
+        margin: 0 0.35rem;
+        text-decoration: none;
+        .icons{
+        font-size: var(--fontsize4);
+        color: #252525;
+        }
+        .icons:hover{
+          color: white
+        }
+      }
+    }
+    
+  }
+  .cardSection{
+    display: flex;
+    flex-direction: row;
+    margin-top: 2rem;
+
+    .cardRight {
+      margin: 1rem;
+      display: flex;
+      flex-direction: column;
+      flex-basis: 70%;
+      align-items: flex-start;
+      justify-content: center;
+      position: relative;
+      height: 200px;
+      width: 50%;
+      border-radius: 2rem;
+      overflow: hidden;
+      background-size: cover;
+      background-position: center;
+      h1{
+        position: absolute;
+        top: 20px;
+        left: 14px;
+        color: #f1f1f1;
+        font-size: var(--fontsize6);
+        text-shadow: 
+        5px 7px 10px rgb(14, 114, 180),
+        2px 2px 1px #252525;
+        ;
+        font-weight: 800;
+      }
+      p{
+        position: absolute;
+        top: 60px;
+        left: 20px;
+        color: #f1f1f1;
+        text-shadow: 2px 2px rgb(103, 180, 14),
+        3px 4px 1px #252525;
+        ;
+        font-weight: 800;
+      }
+      .promoButton{
+        position: absolute;
+        top: 80px;
+        left: 0px;
+        margin: 2rem;
+        padding: 1rem;
+        .btnx {
+          padding: 0.5rem 1rem;
+          margin: 0.6rem;
+          border-radius: 2rem;
+          box-shadow: 2px 2px rgb(180, 14, 14);
+          font-size:  var(--fontsize8);
+        }
+        
+      }
+      
+      h1, p, .btnx{
+        z-index: 100;
+      }
+      .vidoeDiv{
+        position: absolute;
+        width: 100%;
+        height: 100%;
+        top: 0;
+        left: 0;
+        video{
+          width: 100%;
+          height: 100%;
+          object-fit: cover;
+        }
+      }
+   
+    }
+    .cardLeft{
+      margin: 1rem;
+      display: flex;
+      flex-direction: column;
+      flex-basis: 30%;
+      align-items: center;
+      justify-content: center;
+      position: relative;
+      height: 200px;
+      width: 100%;
+      background: linear-gradient(transparent 25%, orange,#11e99698);
+      border-radius: 2rem;
+      .Mystats{
+        display: flex;
+        flex-direction: column;
+        align-items: flex-start;
+
+        font-size: var(--fontsize9);
+        h2{
+          font-size:var(--fontsize7);
+        }
+        .stats{
+          display: grid;
+          grid-template-columns: 1fr 1fr;
+          gap: 1rem;
+          border: 1px solid #e641413a;
+          padding: 1rem;
+
+          .recent, .months{
+            text-align: center;
+            margin: 0.1rem;
+            p, h3{
+              border: 1px solid #eecfcfaa;
+              padding: 0.2rem;
+            }
+          }
+        }
+        button{
+          display: flex;
+          padding: 0.2rem 0.4rem 0.1rem 1.4rem;
+          font-size: var(--fontsize8);
+          align-items: center;
+          justify-content: center;
+          background: #05a8289d;
+          border-radius: 4rem;
+          box-shadow: 2px 3px 5px white, 1px 2px 5px rgb(185, 11, 11);
+          .icons{
+            margin: 0 1rem;
+            font-size: var(--fontsize7);
+            color: rgb(3, 1, 2);
+          }
+        }
+      }
+    }
+  }
+
+}

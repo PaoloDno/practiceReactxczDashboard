@@ -4,8 +4,8 @@
   --mainclrlgt: #e7af60;
   --secondaryclr: #2c5ada;
   --secondaryclrlgt: lightblue;
-  --tertiaryclr: rgb(158, 231, 109);
-  --tertiaryclrlgt: rgb(148, 209, 148);
+  --tertiaryclr: rgb(145, 233, 86);
+  --tertiaryclrlgt: rgb(6, 88, 6);
   --textclr: #eee8e8;
   --textcnt: #f762ea;
   --fontsize1: 5rem;
@@ -29,7 +29,7 @@
 .sideBar {
   margin: 0 1.5rem;
   gap: 0.25rem;
-  background: #f8c67f49;
+  background: #a0d1ab49;
   padding: 0.75rem;
   border-radius: 1.5rem;
   height: 96%;
@@ -66,18 +66,46 @@
 
   .settingLists, .menuLists {
     .list-item{
-      background-color: #d66b07;
+      background-color: #c5e6e641;
+      padding: 0.2rem 0.35rem;
       margin: 0.2rem;
+      border-radius: 0px 2px 21px 0;
+      position: relative;
+      overflow: hidden;
       .menulink {
         text-decoration: none;
-        background-color: aqua;
+        background-color: rgba(76, 226, 226, 0.116);
         .icons {
           padding: 0.15rem;
           margin-right: 1rem;
-          background-color: #77e760;
+          color: var(--secondaryclr);
         }
       }
     }
+    .list-item:hover{
+      margin-left: 0.75rem;
+      transform: scale(1.1);
+    }
+    .list-item::before{
+      position: absolute;
+      content: '';
+      height: 100%;
+      left: 0;
+      top: 0;
+      width: 5px;
+      bottom: 0;
+      border-top-right-radius: 10px;
+      border-bottom-right-radius: 10px;
+      background: var(--tertiaryclr);
+      opacity: 1;
+      transition: width 1.3s ease, opacity 0.3s ease, transform 2s ease;
+    }
+    .list-item:hover:before {
+      width: 500%; /* Stretch width on hover */
+      opacity: 0.6;
+      transform: scaleX(0.1);
+    }
+    
   }
 }
 

@@ -3,7 +3,7 @@
 
 
 body {
-  background: hsla(188, 82%, 17%, 0.247);
+  background: hsl(193, 18%, 90%);
 
 }
 
@@ -36,6 +36,7 @@ body {
   --tertiaryclrlgt: rgb(6, 88, 6);
   --textclr: #eee8e8;
   --textcnt: #f762ea;
+  --textgray: rgba(63, 57, 57, 0.856);
   --fontsize1: 5rem;
   --fontsize2: 4rem;
   --fontsize3: 2.5rem;

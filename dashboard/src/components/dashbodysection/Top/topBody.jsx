@@ -60,7 +60,7 @@ function topBody() {
                 <p>10%</p>
               </div>
               <div className="months">
-              <h3>Sells Month</h3>
+              <h3>Order this Month</h3>
               <p>21</p>
               </div>
             </div>

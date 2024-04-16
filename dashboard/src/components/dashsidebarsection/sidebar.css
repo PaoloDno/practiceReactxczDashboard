@@ -8,6 +8,7 @@
   --tertiaryclrlgt: rgb(6, 88, 6);
   --textclr: #eee8e8;
   --textcnt: #f762ea;
+  --textgray: rgba(114, 109, 109, 0.856);
   --fontsize1: 5rem;
   --fontsize2: 4rem;
   --fontsize3: 2.5rem;
@@ -29,7 +30,7 @@
 .sideBar {
   margin: 0 0.5rem;
   gap: 3rem;
-  background: linear-gradient( #2d77e683, rgba(204, 255, 86, 0.719));
+  background: linear-gradient( #2d77e683, rgba(204, 255, 86, 0.466), rgba(17, 105, 17, 0.603));
   padding: 0.75rem;
   border-radius: 0.5rem;
   height: 96%;
@@ -74,8 +75,10 @@
       .menulink {
         font-size: var(--fontsize9);
         text-decoration: none;
+        color: var(--secondaryclr);
         background-color: rgba(76, 226, 226, 0.116);
         .icons {
+          font-size: var(--fontsize6);
           padding: 0.15rem;
           margin-right: 1rem;
           color: var(--secondaryclr);
@@ -90,7 +93,7 @@
         color: #000;
         .icons {
           color: #252525;
-          font-size: var(--fontsize7);
+          font-size: var(--fontsize5);
         }
       }
     }
@@ -145,7 +148,7 @@
     box-shadow: 0 2px 4px var(--tertiaryclr);
     background-color: var(--tertiaryclr);
     padding: .3rem 0.6rem;
-    color: var(--bgcolor);
+    color: #252525;
     margin: 0.2rem;
   }
   

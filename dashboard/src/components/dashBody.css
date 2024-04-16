@@ -9,10 +9,12 @@
   border-radius: 0.5rem;
   justify-content: center;
   align-items: center;
-  background: rgba(224, 215, 206, 0.932);
+  background: rgba(228, 190, 153, 0.123);
 }
 .bottom-content{
   display: grid;
-  grid-template-columns: 1fr 1fr;
+  grid-template-columns: 1.3fr 1fr;
   gap: 1rem;
+  height: 53%;
+  color: black;
 }

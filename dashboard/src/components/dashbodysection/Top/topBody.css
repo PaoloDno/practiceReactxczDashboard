@@ -78,6 +78,8 @@
     display: flex;
     flex-direction: row;
     margin-top: 2rem;
+    position: relative;
+    height: 200px;
 
     .cardRight {
       margin: 1rem;
@@ -87,7 +89,7 @@
       align-items: flex-start;
       justify-content: center;
       position: relative;
-      height: 200px;
+      height: 180px;
       width: 50%;
       border-radius: 2rem;
       overflow: hidden;
@@ -156,7 +158,7 @@
       align-items: center;
       justify-content: center;
       position: relative;
-      height: 200px;
+      height: 175px;
       width: 100%;
       background: linear-gradient(-198deg, transparent 25%, rgba(228, 165, 48, 0.644),hsla(157, 66%, 50%, 0.527), hsla(187, 91%, 69%, 0.822));
       border-radius: 2rem;

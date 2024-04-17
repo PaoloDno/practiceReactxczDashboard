@@ -1,0 +1,84 @@
+.ActivitySection {
+  position: relative;
+  display: flex;
+  flex-direction: column;
+  width: 100%;
+  margin-top: 1rem;
+  min-width: 30vw;
+  padding: 1rem;
+  border-radius: 16px;
+  height: 450px;
+  background: linear-gradient(
+    120deg,
+    rgba(255, 166, 0, 0.541) 20%,
+    rgba(243, 113, 53, 0.753) 40%,
+    hsla(7, 76%, 61%, 0.816) 55%,
+    rgba(153, 8, 27, 0.521),
+    rgba(204, 9, 35, 0.726)
+
+  );
+  .heading{
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    width: 90%;
+    position: relative;
+    margin-bottom: 1rem;
+    background: rgba(255, 255, 255, 0.212);
+    border-radius: 1rem;
+    padding: 15px;
+    overflow: hidden;
+    h1{
+      color: #252525;
+      font-size: 1rem;
+      font-weight: 650;
+    }
+    button {
+      text-decoration: none;
+      background: transparent;
+      border: none;
+      color: var(--textgray);
+      .icons{
+        margin-left: 1rem;
+      }
+    }
+    button:hover{
+      color: #252525;
+      background-color: rgba(240, 255, 255, 0.801);
+      padding: 0.25rem;
+      border-radius: 1rem;
+    }
+  }
+  .notifContainer{
+    display: flex;
+    flex-direction: column;
+    width: 95%;
+    overflow: hidden;
+    .entree{
+      margin: 1rem 0.2rem;
+      display: flex;
+      flex-direction: row;
+      justify-content: flex-start;
+      background-color: rgba(240, 255, 255, 0.281);
+      padding: 0.55rem;
+      border-radius: 1rem;
+      .userIconNotif{
+        height: 50px;
+        width: 50px;
+        margin: 0 2rem;
+
+      }
+      .activitynotes{
+        h2{
+          font-size: 1rem;
+          color: #252525;
+        }
+        p {
+          font-size: 0.75rem;
+          color: #413c3c;
+        }
+      }
+    }
+
+  }
+}

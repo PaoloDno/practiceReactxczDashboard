@@ -1,0 +1,188 @@
+.listSection {
+  position: relative;
+  flex-basis: 70%;
+  width: 100%;
+  margin-top: 1rem;
+  min-width: 40vw;
+  padding: 1rem;
+  border-radius: 16px;
+  background: linear-gradient(
+    110deg,
+    rgba(173, 216, 230, 0.697) 10%,
+    hsla(120, 100%, 68%, 0.816) 35%,
+    rgba(253, 255, 119, 0.868) 50%,
+    rgba(251, 163, 40, 0.852)
+
+  );
+  .heading{
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    width: 90%;
+    position: relative;
+    margin-bottom: 1rem;
+    
+    h1{
+      color: #252525;
+      font-size: 1rem;
+      font-weight: 650;
+    }
+    button {
+      text-decoration: none;
+      background: transparent;
+      border: none;
+      color: var(--textgray);
+      .icons{
+        margin-left: 1rem;
+      }
+    }
+  }
+  ::-webkit-scrollbar {
+    width: 0px;
+    background: transparent; /* make scrollbar transparent */
+  }
+  .sectionContainer{
+    padding: 0.5rem;
+    display: grid;
+    grid-template-columns: repeat(6, 1fr);
+    flex-wrap: nowrap;
+    gap: 1rem;
+    border-radius: 1rem;
+    background-color: rgba(152, 156, 156, 0.208);
+    width: 100%;
+    padding: 0.2rem;
+    position: relative;
+    overflow-y: hidden;
+    overflow-x: auto;
+    cursor: pointer;
+    height: 200px;
+    
+  .singleItem{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    overflow: hidden;
+    width: 160px;
+    height: 170px;
+    background: transparent;
+    border: 2px solid rgb(245, 243, 242);
+    border-radius: 0.4rem;
+    padding: 0.2rem;
+    font-size: 0.6rem;
+    margin: 10px;
+    .icons{
+      font-size: 0.8rem;
+      margin: 0.2rem;
+    }
+    .imgItem{
+      display: block;
+      width: 90%;
+      height: 100px;
+      object-fit: cover;
+    }
+  }
+  .singleItem:hover{
+    background: rgba(253, 237, 237, 0.856);
+  }
+}
+
+    .bottomContainer{
+      margin-top: 1rem;
+      display: grid;
+      grid-template-columns: 1fr 1fr;
+      position: relative;
+      
+      .sellSection, .buySection{
+      display: flex;
+      flex-direction: column;
+
+      .heading{
+        display: flex;
+        flex-direction: row;
+        justify-content: space-between;
+        width: 90%;
+        position: relative;
+        margin-bottom: 1rem;
+        
+        h1{
+          color: #252525;
+          font-size: 1rem;
+          font-weight: 650;
+        }
+        button {
+          text-decoration: none;
+          background: transparent;
+          border: none;
+          color: var(--textgray);
+          .icons{
+            margin-left: 1rem;
+          }
+        }
+      }
+
+    .containerBuyers, .containerSellers{
+          margin-top: 1rem;
+          border-radius: 1rem;
+          overflow: scroll;
+          overflow-y: hidden;
+          width: 320px;
+          display: flex;
+          flex-direction: row;
+          flex-wrap: nowrap;
+          align-items: center;
+          justify-content: flex-start;
+          height: 90px;
+          background: linear-gradient(65deg, transparent, rgba(168, 255, 168, 0.199) 50%, rgba(48, 243, 243, 0.226) );
+
+          .singleUser{
+            margin: 0 1rem;
+            display: flex;
+            flex-direction: row;
+            background: rgba(255, 255, 255, 0.856);
+            width: fit-content;
+            border-radius: 1rem;
+            padding: 0.3rem;
+            transition: transform 1s ease-in-out;
+            .userIcon{
+              width: 50px;
+              height: 50px;
+              object-fit: cover;
+              border-radius: 50%;
+              padding: 0.1rem;
+            }
+            .userProfile{
+              margin-left: 0.2rem;
+              display: none;
+              flex-direction: column;
+              text-align: right;
+              margin: 0.2rem;
+              text-align: center;
+              justify-content: last baseline;
+              
+              transform: scaleX(0.1);
+              
+              h3{
+                font-size: 0.85rem;
+              }
+              p{
+                font-size: 0.7rem;
+              }
+            }
+            }
+
+        }
+        .singleUser:hover{
+          transform: translateY(-0.2rem);
+          .userProfile{
+            display: flex;
+            transform: scaleX(1);
+          }
+        }
+        
+      
+        
+      }
+    
+    
+    }
+}
